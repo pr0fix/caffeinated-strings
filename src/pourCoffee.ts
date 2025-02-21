@@ -1,5 +1,5 @@
 // Copies one string to another
-function pourCoffee(str: string) {
+export function pourCoffee(str: string) {
   let i = 0;
   let copy = "";
 

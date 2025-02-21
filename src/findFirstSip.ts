@@ -1,4 +1,3 @@
-import { brewLength } from "./brewLength";
 
 // Finds the first occurrence of a character in a string
 export function findFirstSip(str: string, chr: string) {
@@ -18,9 +17,11 @@ export function findFirstSip(str: string, chr: string) {
   }
 
   let result = "";
+  let j = foundIndex;
 
-  for (let j = foundIndex; j < brewLength(str); j++) {
+  while (str[j] !== undefined) {
     result += str[j];
+    j++;
   }
 
   return result;

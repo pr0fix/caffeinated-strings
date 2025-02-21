@@ -1,0 +1,24 @@
+{
+  "name": "caffeinated-strings",
+  "version": "1.0.0",
+  "description": "A coffee-themed JavaScript string utilty library made with TypeScript",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pr0fix/caffeinated-strings.git"
+  },
+  "author": "pr0fix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pr0fix/caffeinated-strings/issues"
+  },
+  "homepage": "https://github.com/pr0fix/caffeinated-strings#readme",
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

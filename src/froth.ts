@@ -1,4 +1,4 @@
 // Converts a string to uppercase
-function froth(str: string) {
+export function froth(str: string) {
     
 }
