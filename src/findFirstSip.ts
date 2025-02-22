@@ -1,6 +1,9 @@
-
 // Finds the first occurrence of a character in a string
-export function findFirstSip(str: string, chr: string) {
+export function findFirstSip(str: string, chr: string): string | null {
+  if (typeof str !== "string" || typeof chr !== "string") {
+    return null;
+  }
+
   let i = 0;
   let foundIndex = -1;
 

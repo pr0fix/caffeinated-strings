@@ -1,5 +1,9 @@
 // Returns the length of a string
-export function brewLength(str: string) {
+export function brewLength(str: string): number | null {
+  if (typeof str !== "string") {
+    return null;
+  }
+
   let i = 0;
   let count = 0;
 

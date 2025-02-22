@@ -1,4 +1,4 @@
-# Coffee-Themed String Library
+# ☕ Coffee-Themed String Library
 
 Welcome to caffeinated-strings, a JavaScript library with a coffee-inspired twist. This library is built with TypeScript and provides a collection of custom-built functions for string manipulation, all named after coffee-related terms. It's perfect for developers who love both coffee and clean code!
 
