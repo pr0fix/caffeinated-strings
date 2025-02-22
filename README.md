@@ -6,12 +6,12 @@ Welcome to caffeinated-strings, a JavaScript library with a coffee-inspired twis
 
 | Traditional Name | Coffee Name    | Description                                                                                       |
 | ---------------- | -------------- | ------------------------------------------------------------------------------------------------- |
+| `.at()`          | `sipAt`        | Returns the character of a string at given index (like taking a single sip of coffee).            |
 | `.length`        | `brewLength`   | Returns the length of a string (how "long" the brew is).                                          |
 | `=`              | `pourCoffee`   | Copies one string to another (like pouring coffee into a new cup).                                |
 | `===, >, <`      | `compareBeans` | Compares two strings (like comparing coffee beans for quality).                                   |
 | `.indexOf()`     | `findFirstSip` | Finds the first occurrence of a **character** in a string (like the first sip of coffee).         |
 | `.indexOf()`     | `findFlavor`   | Finds the first occurrence of a **substring** inside a string (like detecting flavors in coffee). |
-| `.split()`       | `stirAndServe` | Splits a string into tokens (like stirring coffee and separating ingredients).                    |
 | `.toUpperCase()` | `froth`        | Transforms the string to uppercase (like frothing the milk to create a creamy top).               |
 
 ## 🔧 Usage
@@ -59,13 +59,4 @@ console.log(findFirstSip(coffee, "c")); // "cchiato"
 ```js
 let drink = "cappuccino";
 console.log(findFlavor(drink, "cc")); // "ccuccino"
-```
-
-6. `stirAndServe(str, delimiter)`
-   Splits a string into tokens (like stirring coffee and separating ingredients). Returns an array of substrings.
-
-```js
-let drink = "americano";
-let tokens = stirAndServe(drink, "a");
-console.log(tokens); // ["", "mericano"]
 ```
