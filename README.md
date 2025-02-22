@@ -6,7 +6,7 @@ Welcome to caffeinated-strings, a JavaScript library with a coffee-inspired twis
 
 | Traditional Name | Coffee Name    | Description                                                                                       |
 | ---------------- | -------------- | ------------------------------------------------------------------------------------------------- |
-| `.at()`          | `sipAt`        | Returns the character of a string at given index (like taking a single sip of coffee).            |
+| `.charAt()`      | `sipAt`        | Returns the character of a string at given index (like taking a single sip of coffee).            |
 | `.length`        | `brewLength`   | Returns the length of a string (how "long" the brew is).                                          |
 | `=`              | `pourCoffee`   | Copies one string to another (like pouring coffee into a new cup).                                |
 | `===, >, <`      | `compareBeans` | Compares two strings (like comparing coffee beans for quality).                                   |
