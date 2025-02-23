@@ -9,16 +9,16 @@ Welcome to caffeinated-strings, a JavaScript library with a coffee-inspired twis
 
 ## 📚 Functions
 
-| Traditional Name | Coffee Name    | Description                                                                                       |
-| ---------------- | -------------- | ------------------------------------------------------------------------------------------------- |
-| `.charAt()`      | `sipAt`        | Returns the character of a string at given index (like taking a single sip of coffee).            |
-| `.includes()`    | `hasMilk`      | Returns true if given string is found within this string and false if not.                        |
-| `.length`        | `brewLength`   | Returns the length of a string (how "long" the brew is).                                          |
-| `=`              | `pourCoffee`   | Copies one string to another (like pouring coffee into a new cup).                                |
-| `===, >, <`      | `compareBeans` | Compares two strings (like comparing coffee beans for quality).                                   |
-| `.indexOf()`     | `findFirstSip` | Finds the first occurrence of a **character** in a string (like the first sip of coffee).         |
-| `.indexOf()`     | `findFlavor`   | Finds the first occurrence of a **substring** inside a string (like detecting flavors in coffee). |
-| `.toUpperCase()` | `froth`        | Transforms the string to uppercase (like frothing the milk to create a creamy top).               |
+| Traditional Name | Coffee Name    | Description                                                                                                          |
+| ---------------- | -------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `.charAt()`      | `sipAt`        | Returns the character of a string at given index (like taking a single sip of coffee).                               |
+| `.includes()`    | `hasMilk`      | Returns true if given string is found within this string and false if not (like checking if coffee has milk or not). |
+| `.length`        | `brewLength`   | Returns the length of a string (how "long" the brew is).                                                             |
+| `=`              | `pourCoffee`   | Copies one string to another (like pouring coffee into a new cup).                                                   |
+| `===, >, <`      | `compareBeans` | Compares two strings (like comparing coffee beans for quality).                                                      |
+| `.indexOf()`     | `findFirstSip` | Finds the first occurrence of a **character** in a string (like the first sip of coffee).                            |
+| `.indexOf()`     | `findFlavor`   | Finds the first occurrence of a **substring** inside a string (like detecting flavors in coffee).                    |
+| `.toUpperCase()` | `froth`        | Transforms the string to uppercase (like frothing the milk to create a creamy top).                                  |
 
 ## 🔧 Usage
 
