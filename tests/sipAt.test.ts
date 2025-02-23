@@ -1,4 +1,4 @@
-import { sipAt } from "../index";
+import { sipAt } from "../src/index";
 
 test("sipAt should return char from string at given index", () => {
   expect(sipAt("cappuccino", 2)).toBe("p");

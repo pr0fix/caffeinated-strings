@@ -1,4 +1,4 @@
-import { froth } from "../index";
+import { froth } from "../src/index";
 
 test("froth to return string in uppercase", () => {
   expect(froth("coffee")).toBe("COFFEE");

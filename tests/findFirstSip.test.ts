@@ -1,4 +1,4 @@
-import { findFirstSip } from "../index";
+import { findFirstSip } from "../src/index";
 
 test("findFirstSip should return the rest of string after char", () => {
   expect(findFirstSip("cappuccino", "p")).toBe("ppuccino");

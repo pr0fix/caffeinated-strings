@@ -1,4 +1,4 @@
-import { brewLength } from "../index";
+import { brewLength } from "../src/index";
 
 test("brewLength should return the correct length of string", () => {
   expect(brewLength("coffee")).toBe(6);

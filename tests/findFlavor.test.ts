@@ -1,4 +1,4 @@
-import { findFlavor } from "../index";
+import { findFlavor } from "../src/index";
 
 test("findFlavor should return substring correctly", () => {
   expect(findFlavor("cappuccino", "cc")).toBe("ccino");

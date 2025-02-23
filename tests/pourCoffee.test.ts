@@ -1,4 +1,4 @@
-import { pourCoffee } from "../index";
+import { pourCoffee } from "../src/index";
 
 test("pourCoffee should return copy of string", () => {
   expect(pourCoffee("coffee")).toBe("coffee");

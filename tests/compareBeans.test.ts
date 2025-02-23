@@ -1,4 +1,4 @@
-import { compareBeans } from "../index";
+import { compareBeans } from "../src/index";
 
 test("compareBeans should return '>0'", () => {
   expect(compareBeans("cappuccino", "americano")).toBe(">0");

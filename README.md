@@ -4,7 +4,6 @@ Welcome to caffeinated-strings, a JavaScript library with a coffee-inspired twis
 
 ## 📖 Table of Contents
 
-- [Installation](#installation)
 - [Functions](#functions)
 - [Usage](#usage)
 
@@ -13,6 +12,7 @@ Welcome to caffeinated-strings, a JavaScript library with a coffee-inspired twis
 | Traditional Name | Coffee Name    | Description                                                                                       |
 | ---------------- | -------------- | ------------------------------------------------------------------------------------------------- |
 | `.charAt()`      | `sipAt`        | Returns the character of a string at given index (like taking a single sip of coffee).            |
+| `.includes()`    | `hasMilk`      | Returns true if given string is found within this string and false if not.                        |
 | `.length`        | `brewLength`   | Returns the length of a string (how "long" the brew is).                                          |
 | `=`              | `pourCoffee`   | Copies one string to another (like pouring coffee into a new cup).                                |
 | `===, >, <`      | `compareBeans` | Compares two strings (like comparing coffee beans for quality).                                   |
@@ -30,7 +30,16 @@ let brew = "coffee";
 console.log(sipAt(brew, 2)); // f
 ```
 
-2. `brewLength(str)`
+2. `hasMilk(str, word)`
+   Returns true if word is found within string, and false if not.
+
+```js
+let sentence = "coffee tastes good with milk";
+let word = "good";
+console.log(hasMilk(sentence, word)); // true
+```
+
+3. `brewLength(str)`
    Returns the length of a string (how "long" the brew is).
 
 ```js
@@ -38,7 +47,7 @@ let brew = "coffee";
 console.log(brewLength(brew)); // 6
 ```
 
-3. `pourCoffee(str)`
+4. `pourCoffee(str)`
    Copies one string to another (like pouring coffee into a new cup).
 
 ```js
@@ -47,7 +56,7 @@ let cup = pourCoffee(original);
 console.log(cup); // "latte"
 ```
 
-4. `compareBeans(str1, str2)`
+5. `compareBeans(str1, str2)`
    Compares two strings (like comparing coffee beans for quality). Returns a string:
 
 - "0" if the strings are identical.
@@ -59,7 +68,7 @@ let result = compareBeans("espresso", "latte");
 console.log(result); // >0 ('e' > 'l')
 ```
 
-5. `findFirstSip(str, char)`
+6. `findFirstSip(str, char)`
    Finds the first occurrence of a character in a string (like the first sip of coffee). Returns a substring from the first occurrence of the character to the end.
 
 ```js
@@ -67,7 +76,7 @@ let coffee = "macchiato";
 console.log(findFirstSip(coffee, "c")); // "cchiato"
 ```
 
-6. `findFlavor(str, substr)`
+7. `findFlavor(str, substr)`
    Finds a substring inside a string (like detecting flavors in coffee). Returns the substring starting from the first match.
 
 ```js
@@ -75,7 +84,7 @@ let drink = "cappuccino";
 console.log(findFlavor(drink, "cc")); // "ccuccino"
 ```
 
-7. `froth(str)`
+8. `froth(str)`
    Transforms the string to uppercase (like frothing the milk to create a creamy top).
 
 ```js

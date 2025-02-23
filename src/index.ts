@@ -5,3 +5,4 @@ export { findFlavor } from "./findFlavor";
 export { froth } from "./froth";
 export { pourCoffee } from "./pourCoffee";
 export { sipAt } from "./sipAt";
+export { hasMilk } from "./hasMilk";
