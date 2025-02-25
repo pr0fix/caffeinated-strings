@@ -1,4 +1,16 @@
-// Converts a string to uppercase
+/**
+ * Transforms the input string to uppercase.
+ *
+ * @param str The input string.
+ *
+ * @returns The input string in uppercase, or `null` if the input is not a string.
+ *
+ * @example
+ * ```typescript
+ * froth("espresso"); // Returns "ESPRESSO"
+ * froth(123); // Returns null
+ * ```
+ */
 export function froth(str: string) {
   if (typeof str !== "string") {
     return null;

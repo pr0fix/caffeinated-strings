@@ -1,3 +1,21 @@
+/**
+ * Checks if word is within string.
+ *
+ * @param str The input string.
+ * @param word The input word as string.
+ *
+ * @returns 
+ * `true` if word is in string, 
+ * `false` if not, 
+ * or `null` if either of inputs isn't a string.
+ *
+ * @example
+ * ```typescript
+ * hasMilk("coffee tastes good with milk", "good"); // Returns true
+ * hasMilk("coffee tastes good with milk", 2); // Returns null
+ * ```
+ */
+
 export function hasMilk(str: string, word: string) {
   if (typeof str !== "string" || typeof word !== "string") {
     return null;

@@ -1,4 +1,19 @@
-// Finds a substring inside a string
+/**
+ * Finds a substring inside a string.
+ *
+ * @param str The input string.
+ * @param substr The input substring.
+ *
+ * @returns
+ * The substring starting from the first match,
+ * or `null` if either of inputs isn't a string.
+ *
+ * @example
+ * ```typescript
+ * findFlavor("cappuccino", "cc"); // Returns "ccuccino"
+ * findFlavor(123, "a"); // Returns null
+ * ```
+ */
 export function findFlavor(str: string, substr: string): string | null {
   if (typeof str !== "string" || typeof substr !== "string") {
     return null;

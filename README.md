@@ -34,7 +34,8 @@ To install caffeinated-strings, run the following command:
 Once installed, you can import and use the functions in your JavaScript or TypeScript projects:
 
 1. `sipAt(str, index)`
-   Returns the character in a string at given index.
+   Finds the character in a string at given index (like taking a single sip of coffee).
+   Returns the character as `string`:
 
 ```js
 let brew = "coffee";
@@ -42,7 +43,8 @@ console.log(sipAt(brew, 2)); // f
 ```
 
 2. `hasMilk(str, word)`
-   Returns true if word is found within string, and false if not.
+   Checks if word is found within string (like checking if coffee has milk or not).
+   Returns `true` if word is in string, `false` if not:
 
 ```js
 let sentence = "coffee tastes good with milk";
@@ -51,7 +53,8 @@ console.log(hasMilk(sentence, word)); // true
 ```
 
 3. `brewLength(str)`
-   Returns the length of a string (how "long" the brew is).
+   Calculates the length of the input string (how "long" the brew is).
+   Returns the length as `number`:
 
 ```js
 let brew = "coffee";
@@ -60,6 +63,7 @@ console.log(brewLength(brew)); // 6
 
 4. `pourCoffee(str)`
    Copies one string to another (like pouring coffee into a new cup).
+   Returns the copy as `string`:
 
 ```js
 let original = "latte";
@@ -68,19 +72,19 @@ console.log(cup); // "latte"
 ```
 
 5. `compareBeans(str1, str2)`
-   Compares two strings (like comparing coffee beans for quality). Returns a string:
+   Compares two strings (like comparing coffee beans for quality). Returns a `number`:
 
-- "0" if the strings are identical.
-- ">0" if `str1` is lexicographically greater.
-- "<0" if `str1` is lexicographically less.
+- `0` if the strings are identical.
+- `1` if `str1` is lexicographically greater.
+- `-1` if `str1` is lexicographically less.
 
 ```js
 let result = compareBeans("espresso", "latte");
-console.log(result); // >0 ('e' > 'l')
+console.log(result); // 1 ('e' > 'l')
 ```
 
 6. `findFirstSip(str, char)`
-   Finds the first occurrence of a character in a string (like the first sip of coffee). Returns a substring from the first occurrence of the character to the end.
+   Finds the first occurrence of a character in a string (like the first sip of coffee). Returns the substring from the first occurrence of the character as `string`:
 
 ```js
 let coffee = "macchiato";
@@ -88,7 +92,7 @@ console.log(findFirstSip(coffee, "c")); // "cchiato"
 ```
 
 7. `findFlavor(str, substr)`
-   Finds a substring inside a string (like detecting flavors in coffee). Returns the substring starting from the first match.
+   Finds a substring inside a string (like detecting flavors in coffee). Returns the substring starting from the first match as `string`:
 
 ```js
 let drink = "cappuccino";
@@ -97,6 +101,7 @@ console.log(findFlavor(drink, "cc")); // "ccuccino"
 
 8. `froth(str)`
    Transforms the string to uppercase (like frothing the milk to create a creamy top).
+   Returns the input in uppercase as `string`:
 
 ```js
 let drink = "espresso";
