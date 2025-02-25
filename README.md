@@ -4,8 +4,17 @@ Welcome to caffeinated-strings, a JavaScript library with a coffee-inspired twis
 
 ## 📖 Table of Contents
 
+- [Installation](#installation)
 - [Functions](#functions)
 - [Usage](#usage)
+
+## Installation
+
+To install caffeinated-strings, run the following command:
+
+```bash
+   npm install caffeinated-strings
+```
 
 ## 📚 Functions
 
@@ -21,6 +30,8 @@ Welcome to caffeinated-strings, a JavaScript library with a coffee-inspired twis
 | `.toUpperCase()` | `froth`        | Transforms the string to uppercase (like frothing the milk to create a creamy top).                                  |
 
 ## 🔧 Usage
+
+Once installed, you can import and use the functions in your JavaScript or TypeScript projects:
 
 1. `sipAt(str, index)`
    Returns the character in a string at given index.
