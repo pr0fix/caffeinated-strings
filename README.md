@@ -8,7 +8,7 @@ Welcome to caffeinated-strings, a JavaScript library with a coffee-inspired twis
 - [Functions](#functions)
 - [Usage](#usage)
 
-## Installation
+## 📦 Installation
 
 To install caffeinated-strings, run the following command:
 
