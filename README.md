@@ -21,6 +21,7 @@ To install caffeinated-strings, run the following command:
 | Traditional Name | Coffee Name    | Description                                                                                                          |
 | ---------------- | -------------- | -------------------------------------------------------------------------------------------------------------------- |
 | `.charAt()`      | `sipAt`        | Returns the character of a string at given index (like taking a single sip of coffee).                               |
+| `.concat()`      | `addMilk`      | Concatenates a string to another separated with delimiter (like pouring milk into a cup of coffee).                  |
 | `.includes()`    | `hasMilk`      | Returns true if given string is found within this string and false if not (like checking if coffee has milk or not). |
 | `.length`        | `brewLength`   | Returns the length of a string (how "long" the brew is).                                                             |
 | `=`              | `pourCoffee`   | Copies one string to another (like pouring coffee into a new cup).                                                   |
@@ -43,7 +44,18 @@ let brew = "coffee";
 console.log(sipAt(brew, 2)); // f
 ```
 
-2. `hasMilk(str, word)`
+2. `addMilk(str1, str2, delimiter)`
+   Concatenates a string to another separated with delimiter (like pouring milk into a cup of coffee).
+   Returns a `string`:
+
+```js
+let brew = "coffee";
+let milk = "tastes very good with milk";
+let delimiter = ", ";
+console.log(addMilk(brew, milk, delimiter)); // coffee, tastes very good with milk
+```
+
+3. `hasMilk(str, word)`
    Checks if word is found within string (like checking if coffee has milk or not).
    Returns `true` if word is in string, `false` if not:
 
@@ -53,7 +65,7 @@ let word = "good";
 console.log(hasMilk(sentence, word)); // true
 ```
 
-3. `brewLength(str)`
+4. `brewLength(str)`
    Calculates the length of the input string (how "long" the brew is).
    Returns the length as `number`:
 
@@ -62,7 +74,7 @@ let brew = "coffee";
 console.log(brewLength(brew)); // 6
 ```
 
-4. `pourCoffee(str)`
+5. `pourCoffee(str)`
    Copies one string to another (like pouring coffee into a new cup).
    Returns the copy as `string`:
 
@@ -72,7 +84,7 @@ let cup = pourCoffee(original);
 console.log(cup); // "latte"
 ```
 
-5. `compareBeans(str1, str2)`
+6. `compareBeans(str1, str2)`
    Compares two strings (like comparing coffee beans for quality). Returns a `number`:
 
 - `0` if the strings are identical.
@@ -84,7 +96,7 @@ let result = compareBeans("espresso", "latte");
 console.log(result); // 1 ('e' > 'l')
 ```
 
-6. `findFirstSip(str, char)`
+7. `findFirstSip(str, char)`
    Finds the first occurrence of a character in a string (like the first sip of coffee). Returns the substring from the first occurrence of the character as `string`:
 
 ```js
@@ -92,7 +104,7 @@ let coffee = "macchiato";
 console.log(findFirstSip(coffee, "c")); // "cchiato"
 ```
 
-7. `findFlavor(str, substr)`
+8. `findFlavor(str, substr)`
    Finds a substring inside a string (like detecting flavors in coffee). Returns the substring starting from the first match as `string`:
 
 ```js
@@ -100,7 +112,7 @@ let drink = "cappuccino";
 console.log(findFlavor(drink, "cc")); // "ccuccino"
 ```
 
-8. `coolDown(str)`
+9. `coolDown(str)`
    Transforms the string to lowercase (like cooling down a cup of coffee).
    Returns the input in lowercase as `string`:
 
@@ -109,9 +121,9 @@ let drink = "ESPRESSO";
 console.log(froth(drink)); // "espresso"
 ```
 
-9. `froth(str)`
-   Transforms the string to uppercase (like frothing the milk to create a creamy top).
-   Returns the input in uppercase as `string`:
+10. `froth(str)`
+    Transforms the string to uppercase (like frothing the milk to create a creamy top).
+    Returns the input in uppercase as `string`:
 
 ```js
 let drink = "espresso";

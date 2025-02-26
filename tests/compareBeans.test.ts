@@ -1,14 +1,14 @@
 import { compareBeans } from "../src/index";
 
-test("compareBeans should return '>0'", () => {
+test("compareBeans should return 1", () => {
   expect(compareBeans("cappuccino", "americano")).toBe(1);
 });
 
-test("compareBeans should return '<0'", () => {
+test("compareBeans should return -1", () => {
   expect(compareBeans("americano", "cappuccino")).toBe(-1);
 });
 
-test("compareBeans should return '0'", () => {
+test("compareBeans should return 0", () => {
   expect(compareBeans("americano", "americano")).toBe(0);
 });
 

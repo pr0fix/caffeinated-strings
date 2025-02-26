@@ -1,3 +1,4 @@
+export { addMilk } from "./addMilk";
 export { brewLength } from "./brewLength";
 export { compareBeans } from "./compareBeans";
 export { coolDown } from "./coolDown";

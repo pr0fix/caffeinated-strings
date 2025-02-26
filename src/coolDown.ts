@@ -1,3 +1,16 @@
+/**
+ * Transforms the input string to lowercase.
+ *
+ * @param str The input string.
+ * 
+ * @returns The input string in lowercase, or `null` if the input is not a string.
+ *
+ * @example
+ * ```typescript
+ * coolDown("ESPRESSO"); // Returns "espresso"
+ * coolDown(123); // Returns null
+ * ```
+ */
 export function coolDown(str: string): string | null {
   if (typeof str !== "string") {
     return null;
