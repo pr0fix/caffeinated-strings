@@ -27,6 +27,7 @@ To install caffeinated-strings, run the following command:
 | `===, >, <`      | `compareBeans` | Compares two strings (like comparing coffee beans for quality).                                                      |
 | `.indexOf()`     | `findFirstSip` | Finds the first occurrence of a **character** in a string (like the first sip of coffee).                            |
 | `.indexOf()`     | `findFlavor`   | Finds the first occurrence of a **substring** inside a string (like detecting flavors in coffee).                    |
+| `.toLowerCase()` | `coolDown`     | Transforms the string to lowercase (like cooling down a cup of coffee).                                              |
 | `.toUpperCase()` | `froth`        | Transforms the string to uppercase (like frothing the milk to create a creamy top).                                  |
 
 ## 🔧 Usage
@@ -99,7 +100,16 @@ let drink = "cappuccino";
 console.log(findFlavor(drink, "cc")); // "ccuccino"
 ```
 
-8. `froth(str)`
+8. `coolDown(str)`
+   Transforms the string to lowercase (like cooling down a cup of coffee).
+   Returns the input in lowercase as `string`:
+
+```js
+let drink = "ESPRESSO";
+console.log(froth(drink)); // "espresso"
+```
+
+9. `froth(str)`
    Transforms the string to uppercase (like frothing the milk to create a creamy top).
    Returns the input in uppercase as `string`:
 
