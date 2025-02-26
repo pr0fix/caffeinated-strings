@@ -1,8 +1,12 @@
 import { froth } from "../src/index";
 
-test("froth to return string in uppercase", () => {
+test("froth should return string in uppercase", () => {
   expect(froth("coffee")).toBe("COFFEE");
   expect(froth("cOfFeE")).toBe("COFFEE");
+});
+
+test("froth should return string with extended Latin alphabets in uppercase", () => {
+  expect(froth("äöå")).toBe("ÄÖÅ");
 });
 
 test("froth should not return a string containing lowercase letters", () => {

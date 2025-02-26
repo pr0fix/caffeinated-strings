@@ -1,5 +1,6 @@
 export { brewLength } from "./brewLength";
 export { compareBeans } from "./compareBeans";
+export { coolDown } from "./coolDown";
 export { findFirstSip } from "./findFirstSip";
 export { findFlavor } from "./findFlavor";
 export { froth } from "./froth";

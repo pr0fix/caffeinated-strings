@@ -11,7 +11,7 @@
  * froth(123); // Returns null
  * ```
  */
-export function froth(str: string) {
+export function froth(str: string): string | null {
   if (typeof str !== "string") {
     return null;
   }
@@ -21,7 +21,8 @@ export function froth(str: string) {
 
   while (str[i] !== undefined) {
     result += String.fromCharCode(
-      str.charCodeAt(i) > 96 && str.charCodeAt(i) < 123
+      (str.charCodeAt(i) > 96 && str.charCodeAt(i) < 123) ||
+        (str.charCodeAt(i) > 223 && str.charCodeAt(i) < 256)
         ? str.charCodeAt(i) - 32
         : str.charCodeAt(i)
     );

@@ -11,7 +11,7 @@
  * pourCoffee(123); // Returns null
  * ```
  */
-export function pourCoffee(str: string) {
+export function pourCoffee(str: string): string | null {
   if (typeof str !== "string") {
     return null;
   }

@@ -16,7 +16,7 @@
  * ```
  */
 
-export function hasMilk(str: string, word: string) {
+export function hasMilk(str: string, word: string): boolean | null {
   if (typeof str !== "string" || typeof word !== "string") {
     return null;
   }
