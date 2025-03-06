@@ -18,18 +18,19 @@ To install caffeinated-strings, run the following command:
 
 ## 📚 Functions
 
-| Traditional Name | Coffee Name    | Description                                                                                                          |
-| ---------------- | -------------- | -------------------------------------------------------------------------------------------------------------------- |
-| `.charAt()`      | `sipAt`        | Returns the character of a string at given index (like taking a single sip of coffee).                               |
-| `.concat()`      | `addMilk`      | Concatenates a string to another separated with delimiter (like pouring milk into a cup of coffee).                  |
-| `.includes()`    | `hasMilk`      | Returns true if given string is found within this string and false if not (like checking if coffee has milk or not). |
-| `.length`        | `brewLength`   | Returns the length of a string (how "long" the brew is).                                                             |
-| `=`              | `pourCoffee`   | Copies one string to another (like pouring coffee into a new cup).                                                   |
-| `===, >, <`      | `compareBeans` | Compares two strings (like comparing coffee beans for quality).                                                      |
-| `.indexOf()`     | `findFirstSip` | Finds the first occurrence of a **character** in a string (like the first sip of coffee).                            |
-| `.indexOf()`     | `findFlavor`   | Finds the first occurrence of a **substring** inside a string (like detecting flavors in coffee).                    |
-| `.toLowerCase()` | `coolDown`     | Transforms the string to lowercase (like cooling down a cup of coffee).                                              |
-| `.toUpperCase()` | `froth`        | Transforms the string to uppercase (like frothing the milk to create a creamy top).                                  |
+| Traditional Name | Coffee Name    | Description                                                                                                                                       |
+| ---------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `.charAt()`      | `sipAt`        | Returns the character of a string at given index (like taking a single sip of coffee).                                                            |
+| `.concat()`      | `addMilk`      | Concatenates a string to another separated with delimiter (like pouring milk into a cup of coffee).                                               |
+| `.includes()`    | `hasMilk`      | Returns true if given string is found within this string and false if not (like checking if coffee has milk or not).                              |
+| `.length`        | `brewLength`   | Returns the length of a string (how "long" the brew is).                                                                                          |
+| `=`              | `pourCoffee`   | Copies one string to another (like pouring coffee into a new cup).                                                                                |
+| `===, >, <`      | `compareBeans` | Compares two strings (like comparing coffee beans for quality).                                                                                   |
+| `.indexOf()`     | `findFirstSip` | Finds the first occurrence of a **character** in a string (like the first sip of coffee).                                                         |
+| `.indexOf()`     | `findFlavor`   | Finds the first occurrence of a **substring** inside a string (like detecting flavors in coffee).                                                 |
+| `.repeat()`      | `refillCup`    | Constructs a new string which contains a specified number of copies of the input string (like refilling a coffee cup a specific amount of times). |
+| `.toLowerCase()` | `coolDown`     | Transforms the string to lowercase (like cooling down a cup of coffee).                                                                           |
+| `.toUpperCase()` | `froth`        | Transforms the string to uppercase (like frothing the milk to create a creamy top).                                                               |
 
 ## 🔧 Usage
 
@@ -112,16 +113,24 @@ let drink = "cappuccino";
 console.log(findFlavor(drink, "cc")); // "ccuccino"
 ```
 
-9. `coolDown(str)`
-   Transforms the string to lowercase (like cooling down a cup of coffee).
-   Returns the input in lowercase as `string`:
+9. `refillCup(str, count)`
+   Constructs a new string with copies of input string the amount of times specified. Returns the new string concatenated together:
+
+```js
+let coffee = "cappuccino ";
+console.log(refillCup(drink, 3)); // "cappuccino cappuccino cappuccino "
+```
+
+10. `coolDown(str)`
+    Transforms the string to lowercase (like cooling down a cup of coffee).
+    Returns the input in lowercase as `string`:
 
 ```js
 let drink = "ESPRESSO";
 console.log(froth(drink)); // "espresso"
 ```
 
-10. `froth(str)`
+11. `froth(str)`
     Transforms the string to uppercase (like frothing the milk to create a creamy top).
     Returns the input in uppercase as `string`:
 
