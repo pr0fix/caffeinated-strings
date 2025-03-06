@@ -1,0 +1,50 @@
+name: Deployment Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
+
+jobs:
+  deployment_pipeline:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run unit-tests
+        run: npm run test
+
+      - name: Run build
+        run: npm run build
+
+      - name: Version based on commit message
+        if: ${{ github.event_name == 'push' }}
+        id: versioning
+        uses: phips28/gh-action-bump-version@v10.1.1
+        with:
+          minor-wording: 'minor'
+          major-wording: 'major'
+          patch-wording: 'patch,fix'
+          rc-wording: 'rc,alpha,beta'
+          skip-tag: 'true'
+          default: 'patch'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to npm
+        if: ${{ github.event_name == 'push' }}
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN}}
