@@ -8,6 +8,10 @@ on:
     branches: [main]
     types: [opened, synchronize]
 
+permissions:
+  contents: write
+  packages: write
+
 jobs:
   deployment_pipeline:
     runs-on: ubuntu-24.04
@@ -18,7 +22,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: "https://registry.npmjs.org"
 
       - name: Install dependencies
         run: npm install
@@ -34,12 +38,12 @@ jobs:
         id: versioning
         uses: phips28/gh-action-bump-version@v10.1.1
         with:
-          minor-wording: 'minor'
-          major-wording: 'major'
-          patch-wording: 'patch,fix'
-          rc-wording: 'rc,alpha,beta'
-          skip-tag: 'true'
-          default: 'patch'
+          minor-wording: "minor"
+          major-wording: "major"
+          patch-wording: "patch,fix"
+          rc-wording: "rc,alpha,beta"
+          skip-tag: "true"
+          default: "patch"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
