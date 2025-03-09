@@ -31,6 +31,7 @@ To install caffeinated-strings, run the following command:
 | `.repeat()`      | `refillCup`    | Constructs a new string which contains a specified number of copies of the input string (like refilling a coffee cup a specific amount of times). |
 | `.toLowerCase()` | `coolDown`     | Transforms the string to lowercase (like cooling down a cup of coffee).                                                                           |
 | `.toUpperCase()` | `froth`        | Transforms the string to uppercase (like frothing the milk to create a creamy top).                                                               |
+| `.trim()`        | `sip`          | Removes whitespace from both ends of string (like sipping away the excess on top).                                                                |
 
 ## 🔧 Usage
 
@@ -127,7 +128,7 @@ console.log(refillCup(drink, 3)); // "cappuccino cappuccino cappuccino "
 
 ```js
 let drink = "ESPRESSO";
-console.log(froth(drink)); // "espresso"
+console.log(coolDown(drink)); // "espresso"
 ```
 
 11. `froth(str)`
@@ -137,4 +138,13 @@ console.log(froth(drink)); // "espresso"
 ```js
 let drink = "espresso";
 console.log(froth(drink)); // "ESPRESSO"
+```
+
+12. `sip(str)`
+    Removes whitespace from both ends of the string (like sipping away the excess on top).
+    Returns a new `string` without modifying the original:
+
+```js
+let drink = "   espresso is lovely!!     ";
+console.log(sip(drink)); // "espresso is lovely!!"
 ```

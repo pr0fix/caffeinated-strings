@@ -8,4 +8,5 @@ export { froth } from "./froth";
 export { hasMilk } from "./hasMilk";
 export { pourCoffee } from "./pourCoffee";
 export { refillCup } from "./refillCup";
+export { sip } from "./sip";
 export { sipAt } from "./sipAt";

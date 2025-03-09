@@ -4,7 +4,8 @@
  * @param str The input string
  * @param count The input count
  *
- * @returns A string with specified number of copies of input string, concatenated together.
+ * @returns A string with specified number of copies of input string concatenated together, 
+ * or `null` if the inputs are of wrong type.
  *
  * @example
  * ```typescript
